@@ -1,0 +1,9 @@
+# Sagattto / AdMob
+#
+# publisher ID は AdMob の「アカウント情報」→「パブリッシャー ID」にある
+# pub- から始まる16桁の数字。下の pub-XXXXXXXXXXXXXXXX を置き換えること。
+# f08c47fec0942fa0 は Google の認証局 ID。全員共通なので書き換えない。
+#
+# App Store の「デベロッパ Web サイト」（マーケティング URL）が
+# https://sagattto.github.io/ になっているので、クローラはこのファイルを読みにくる。
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0

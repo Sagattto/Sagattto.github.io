@@ -1,0 +1,60 @@
+/* Sagattto のアプリサイト。1ファイルで全ページぶん。 */
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --card: #f6f7f9;
+  --text: #15181d;
+  --sub: #5b616b;
+  --line: #e2e5ea;
+  --link: #2563eb;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0d12;
+    --card: #161a21;
+    --text: #e9ecf1;
+    --sub: #9aa2ae;
+    --line: #262b34;
+    --link: #6aa6ff;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 0 20px 72px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+  line-height: 1.85;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+main, header, footer { max-width: 720px; margin: 0 auto; }
+header { padding: 40px 0 8px; border-bottom: 1px solid var(--line); margin-bottom: 28px; }
+header h1 { font-size: 1.6rem; margin: 0 0 6px; letter-spacing: .01em; }
+header p { color: var(--sub); margin: 0; font-size: .95rem; }
+nav { margin-top: 14px; display: flex; gap: 18px; flex-wrap: wrap; font-size: .95rem; }
+h2 { font-size: 1.15rem; margin: 36px 0 10px; }
+h3 { font-size: 1rem; margin: 24px 0 8px; }
+p, li { color: var(--text); }
+ul { padding-left: 1.3em; }
+li { margin: 4px 0; }
+a { color: var(--link); }
+a:hover { text-decoration: none; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 18px 0;
+}
+.card h3 { margin-top: 0; }
+.muted { color: var(--sub); font-size: .9rem; }
+table { border-collapse: collapse; width: 100%; margin: 14px 0; font-size: .95rem; }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: var(--card); font-weight: 600; }
+footer {
+  margin-top: 56px; padding-top: 20px;
+  border-top: 1px solid var(--line);
+  color: var(--sub); font-size: .9rem;
+}
